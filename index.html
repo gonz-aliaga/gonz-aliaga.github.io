@@ -56,18 +56,18 @@
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Formulario de pago</h5>
-                        <p class="card-text">Realiza tus pagos de forma rápida y sencilla con nosotros</p>
-                        <a href="#formulario" class="btn btn-primary">Ir al formulario</a>
+                        <h5 class="card-title">Catálogo</h5>
+                        <p class="card-text">Visualiza nuestro amplio catálogo de variados productos</p>
+                        <a href="#catalogo" class="btn btn-primary">Ir al catálogo</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Catálogo</h5>
-                        <p class="card-text">Visualiza nuestro amplio catálogo de variados productos</p>
-                        <a href="#catalogo" class="btn btn-primary">Ir al catálogo</a>
+                        <h5 class="card-title">Formulario de pago</h5>
+                        <p class="card-text">Realiza tus pagos de forma rápida y sencilla con nosotros</p>
+                        <a href="#formulario" class="btn btn-primary">Ir al formulario</a>
                     </div>
                 </div>
             </div>
@@ -131,38 +131,42 @@
     </h2>
 
     <!-- Formulario -->
-    <form id="formCat" style="background-color: rgb(247, 247, 247); padding: 10px; margin: 20px;">
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">No compartiremos esta información con nadie.</div>
+    <div style="display: flex;">
+        <div style="flex: 1; box-sizing: border-box;"></div>
+        <div style="flex: 2; box-sizing: border-box;">
+            <form id="formCat" style="background-color: rgb(247, 247, 247); padding: 10px; margin: 20px;">
+                <label>Correo electrónico<br>
+                    <input class = "inputForm" id="email" name="email"></input>
+                </label>
+                <br>
+                <label>Dirección<br>
+                    <input class = "inputForm" id="addr" name="addr"></input>
+                </label>
+                <br>
+                <label>Número de tarjeta<br>
+                    <input class = "inputForm" id="cardNum" name="cardNum"></input>
+                </label>
+                <br>
+                <label>Fecha de caducidad<br>
+                    <input class = "inputForm" id="expDate" name="expDate"></input>
+                </label>
+                <br>
+                <label>CVV<br>
+                    <input class = "inputForm" id="cvv" name="cvv"></input>
+                </label>
+                <br>
+                <label>Clave<br>
+                    <input class = "inputForm" id="cardPsw" name="cardPsw"></input>
+                </label>
+                <p style="font-size: smaller;">No compartiremos esta información con nadie.</p>
+                <input type="checkbox" id="informado"><label for="informado">Mantenme informado/a sobre futuras ofertas</label>
+                <div id="errorDiv"></div>
+                <input type="submit" value="Enviar" style="background-color:rgb(28, 139, 236); color: aliceblue;">
+                <script src="scripts/main.js"></script>
+            </form>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Dirección
-            <input type="text" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Número de tarjeta
-            <input type="text" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Fecha de caducidad
-            <input type="text" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">CVV
-            <input type="text" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Clave
-            <input type="text" class="form-control">
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Mantenme informado/a sobre ofertas futuras</label>
-        </div>
-        <a href="#aboutus" type="submit" class="btn btn-primary">Enviar</a>
-    </form>
+        <div style="flex: 1; box-sizing: border-box;"></div>
+    </div>
 
     <div style="height: 10cm;"></div>
     <h2 id="aboutus" style="text-align: center; color: aliceblue;">
@@ -182,8 +186,8 @@
             </div>
         </div>
     </div>
-    <div style="background-color: rgb(255, 255, 255);">
-    <p>Contacto: <br>Instagram: @ranzomdead<br>TikTok: @ranzomdead<br>Telefono: +11 1 1111 1111</p>
+    <div style="background-color: rgb(255, 255, 255); margin-left: 10px; margin-right: 10px;">
+    <p>Contacto: <br>Instagram: @ranzomdead<br>TikTok: @ranzomdead<br>Telefono: +56 9 5937 6076</p>
     </div>
 </body>
 </html>

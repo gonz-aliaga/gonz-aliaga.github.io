@@ -1,0 +1,13 @@
+#errorForm {
+    background-color: rgb(252, 195, 195);
+    color: brown;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#validForm {
+    background-color: rgb(162, 240, 155);
+    color: rgb(8, 104, 32);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
